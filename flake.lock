@@ -1,6 +1,40 @@
 {
   "nodes": {
+    "gnucashfl": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
+      "locked": {
+        "lastModified": 1752781189,
+        "narHash": "sha256-pAD+PLGMKo9F5RyWf2pRGphOhhJWbyGscDLjYGIoY1A=",
+        "owner": "srd424",
+        "repo": "gnucash54-nix",
+        "rev": "474b1ebb83990e2f9b75041c15883600e68448d1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "srd424",
+        "repo": "gnucash54-nix",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
+      "locked": {
+        "lastModified": 1704290814,
+        "narHash": "sha256-LWvKHp7kGxk/GEtlrGYV68qIvPHkU9iToomNFGagixU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "70bdadeb94ffc8806c0570eb5c2695ad29f0e421",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "nixos-23.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_2": {
       "locked": {
         "lastModified": 1704290814,
         "narHash": "sha256-LWvKHp7kGxk/GEtlrGYV68qIvPHkU9iToomNFGagixU=",
@@ -18,7 +52,8 @@
     },
     "root": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "gnucashfl": "gnucashfl",
+        "nixpkgs": "nixpkgs_2"
       }
     }
   },
