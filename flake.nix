@@ -16,7 +16,7 @@
     packages.x86_64-linux.import = pkgs.python3Packages.buildPythonApplication rec {
       pname = "gnucash-qif-import";
       version = "0.1";
-      src = /home/steved/pkgs/gnucash-qif-import/gnucash-qif-import3;
+      src = ./src;
       format = "other";
       propagatedBuildInputs = [ pymodule ];
       installPhase = ''
